@@ -5,12 +5,7 @@ import './App.css'
 export const App = () => {
   return (
     <div className='App'>
-      <Navbar />
-      <Header />
-      <About />
-      <Skills />
-      <Projects />
-      <Certificates />
+   
       <Contact />
       <Footer />
 
