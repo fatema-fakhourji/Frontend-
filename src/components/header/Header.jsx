@@ -4,9 +4,9 @@ import './header.css';
 
 const Header = () => {
   return (
-
-    
-    <div>Header</div>
+  <div className='header-text'>
+    <h1>“Helping your <span className='text-special'> products </span><br /> to see the light is my <br /> calling.”</h1>
+  </div>
   )
 }
 
