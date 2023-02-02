@@ -26,18 +26,25 @@ h1{
   height: 45vh;
   border-radius: 80px;
   background-color: #181924;
+  transition: 1s;
   
   
  
 }
 
 .image{
- 
-  
   height: 30vh;
   border-radius: 10px;
   margin: 10px;
   padding-top: 60px;
+  
+}
+
+
+.product:hover{
+  transform: scale(1.6);
+  z-index: 2;
+
 }
 
 .product-thumb{
