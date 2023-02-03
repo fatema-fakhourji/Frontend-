@@ -17,6 +17,7 @@ function Navbar() {
 		<header>
     <img src={logo} />
     		<nav ref={navRef}>
+			<p> Anass Haydar </p>
 				<a onClick={() => document.getElementById("about").scrollIntoView()}>About</a>
 				<a onClick={() => document.getElementById("skills").scrollIntoView()}>Skills</a>
 				<a onClick={() => document.getElementById("projects").scrollIntoView()}>Projects</a>

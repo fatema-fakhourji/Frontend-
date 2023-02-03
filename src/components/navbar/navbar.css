@@ -47,6 +47,13 @@ position: relative;
 padding: 0.9rem;
 transition: 200ms ease;
 }
+nav p{
+  background-color: #1D1D29;
+  width: vw;
+}
+
+
+
 nav a:hover{
 cursor: pointer;
 }
