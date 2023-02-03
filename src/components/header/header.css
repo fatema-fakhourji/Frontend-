@@ -1,0 +1,24 @@
+.header-text{
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    padding-bottom: 7%;
+    font-weight: bold;
+}
+.text-special{
+    color: #9AA1DB;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 1200px){
+    .header-text{
+        font-size: 50px ;
+        text-align: center;
+    }
+}
+ 
+@media only screen and(min-width: 1200px){
+    .header-text{
+        font-size: 80px;
+      }
+} 
