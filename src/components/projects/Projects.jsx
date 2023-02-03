@@ -1,13 +1,15 @@
 import React from 'react';
 import './projects.css'
-import logo from '../../assets/logo.png'
+import logo from '../../assets/logo-1.png';
+
 import { data } from './mock'
 
 const Projects = () => {
   return (
     <div className='projects-wrapper' id='projects'>
       <div className='projects-header'>
-        <img src={logo} className='logo' alt='logo'/>
+      <img src={logo} />
+
         <p>Projects:</p>
       </div>
       {data.map((item)=> (

@@ -1,16 +1,28 @@
 .projects-header{
     display: flex;
     align-items: center;
+
 }
 .projects-header p{
     color: white;
     font-weight: bold;
     font-size: 40px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    left: 7%;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 32px;
+
 }
-.logo{
+.projects-header img{
     width: 8vw;
-    height: 9vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 8%;
+
 }
 .projects {
     display: flex;
@@ -51,8 +63,10 @@
 }
 .title3 a{
     font-size: 25px;
-    color: white;
     text-decoration: none;
+    color:aqua;
+    border-bottom: solid 2px aqua;
+
 }
 .project-image1 {
     margin-left: 20%;
@@ -86,12 +100,35 @@
     overflow: hidden;
     position: relative;
     top: 8%;
+    background-color: #181924;
 }
+
+.project-content p{
+    background-color: #181924;
+}
+
+.project-content {
+    background-color: #181924;
+}
+
+.project-content a{
+    background-color: #181924;
+}
+
+
 @media only screen and (min-width: 300px) and (max-width: 800px) {
-    .logo{
-        width: 20vw;
-        height: 7vh;
+  
+    .projects-wrapper{
+        padding-top: 10vw;
     }
+    .projects-header img{
+        width: 20vw;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 8%;
+}
+
     .number {
         font-size: 70px;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -101,11 +138,13 @@
         -webkit-text-fill-color: transparent;
     }
     .projects-header p{
+        position: relative;
+        left: 7%;
+        display: flex;
+        align-items: center;
         color: white;
-        font-weight: bold;
-        font-size: 30px;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
+     }
+   
     .project-content {
         color: white;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -120,8 +159,9 @@
     }
     .title3 a{
         font-size: 15px;
-        color: white;
-        text-decoration: none;
+        color:aqua;
+        border-bottom: solid 2px aqua;
+
     }
     .project-border {
         display: flex;
@@ -131,7 +171,8 @@
         background-color: #181924;
         border-radius: 50px;
         align-items: center;
-        margin-top: -150px;
+        /* margin-top: -150px; */
+
     }
     .projects {
         display: flex;
@@ -139,10 +180,12 @@
     }
     .img-container {
         width: 70vw;
-        height: 30vh;
+        height: 28vh;
         overflow: hidden;
         position: relative;
-        margin-top: -150px;
+        margin-top: -60px;
+        background-color:#181924;
+        margin-bottom: 33px;
     }
     .project-image1 {
         margin-left: 20%;
@@ -167,9 +210,16 @@
     }
 }
 @media only screen and (min-width: 800px) and (max-width: 1200px) {
-    .logo{
-        width: 12vw;
-        height: 8vh;
+    .projects-wrapper{
+        padding-top: 10vw;
+    }
+    .projects-header img{
+        width: 20vw;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 8%;
+
     }
     .projects-header p{
         color: white;
@@ -191,7 +241,10 @@
     }
     .title3 a{
         font-size: 20px;
-        color: white;
+
+        color:aqua;
+        border-bottom: solid 2px aqua;
+
         text-decoration: none;
     }
     .project-border {
@@ -234,3 +287,4 @@
         border-radius: 20px;
     }
 }
+
