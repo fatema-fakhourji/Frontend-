@@ -27,3 +27,4 @@ export const data = [
       "image1": require("../../assets/project 4.png"),
       "image2": require("../../assets/s3.png")
   }
+]
