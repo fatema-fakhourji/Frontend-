@@ -38,7 +38,7 @@ const Skills = () => {
     {posts.map(item => (
     <div className='skills-items'>
      <span className='skills-item-1'> 
-        <img src={`http://localhost:5000/${item.image1}`}/>
+        <img src={`http://localhost:5000/${item.image}`}/>
         <h3>  {item.description}</h3>
      </span>
      
