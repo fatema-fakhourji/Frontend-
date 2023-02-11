@@ -1,6 +1,7 @@
 import React from 'react'
-import { About, Certificates, Contact, Footer, Header, Navbar, Projects, Skills } from './components'
+// import { About, Certificates, Contact, Footer, Header, Navbar, Projects, Skills, register } from './components'
 import './App.css'
+import Register from "./components/adminDashboard/register"
 
 
 export const App = () => {
