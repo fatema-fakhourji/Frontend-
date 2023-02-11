@@ -3,6 +3,8 @@ import './about.css';
 import logo from '../../assets/logo-1.png';
 import profile from '../../assets/anass-logo.png'
 import { useState, useEffect } from 'react';
+import DeleteButton from './deleteButton';
+import EditButton from './editButton';
 
 const About = () => {
   const [posts, setPosts] = useState([]);
@@ -20,6 +22,9 @@ const About = () => {
      fetchData();
   }, []);
   console.log(posts)
+
+
+
   return (
     
     <div>
@@ -31,10 +36,23 @@ const About = () => {
       <h1>About: </h1>
       </div>
       <div className='about-content'> 
-      <div className='profile-background'>  <img src={`http://localhost:5000/${item.image}`}/></div>
+      <div className='profile-background'>  <img src={`./${item.image}`}/></div>
       <p> {item.description}</p>
      
+     
       </div>
+      <div className='buttons'>
+      <DeleteButton />
+
+      <EditButton />
+
+                        <button
+                          className="changes"
+                          // onClick={() => saveImage(project.id)}
+                        >
+                          Save
+                        </button>
+                        </div>
     </div>))}
     </div>
     

@@ -20,11 +20,8 @@
 }
 .skills-container{
     display: flex;
-
- justify-content: space-around;
+    justify-content: center;
 }
-
-
 .skills-items{
     display: flex;
 flex-direction: row;
@@ -79,7 +76,6 @@ flex-direction: row;
         display: flex;
         flex-direction: column;
         align-items: center;
-       
     }
     .skills-items h3{
         display: flex;

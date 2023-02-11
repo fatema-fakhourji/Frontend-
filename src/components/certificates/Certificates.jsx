@@ -1,39 +1,35 @@
 import React, { Fragment } from "react";
 import "./certificates.css";
-import certificate1 from "../../assets/certificate1.jpg";
-import certificate2 from "../../assets/certificate2.jpg";
-import certificate3 from "../../assets/certificate3.jpg";
-import certificate4 from "../../assets/certificate4.jpg";
-import logo from "../../assets/logo.png"
-import Carousel from "react-elastic-carousel";
-
-const breakPoints = [
-  { width: 1, itemsToShow: 1 },
-  { width: 550, itemsToShow: 2 },
- 
-];
+import certificate1 from "../certificates/images/certificate1.jpg";
+import certificate2 from "../certificates/images/certificate2.jpg";
+import certificate3 from "../certificates/images/certificate3.jpg";
+import certificate4 from "../certificates/images/certificate4.jpg";
+import logo from "../certificates/images/logo.png"
 
 const ProductCard = () => {
   return (
     <div id="certificates">
       <Fragment>
-       <div className="certificates-header">
+        <h1>
           {" "}
-        
+          <a href="#">
             <img className="logo" src={logo} alt="logo" />
-          <p> 
+          </a>
           Certificates:
-        </p>
-        </div>
+        </h1>
         <section>
           <div className="row">
-            <Carousel breakPoints={breakPoints}>
+           
               {/*cer 1*/}
 
               <div className="product">
                 <div className="product-thumb">
                   <a href="#">
-                    <img className="image" src={certificate1} alt="certificate"/>
+                    <img
+                      className="image"
+                      src={certificate1}
+                      alt="certificate"
+                    />
                   </a>
                 </div>
               </div>
@@ -75,7 +71,7 @@ const ProductCard = () => {
                   </a>
                 </div>
               </div>
-            </Carousel>
+           
           </div>
         </section>
       </Fragment>

@@ -3,7 +3,9 @@ import { useEffect, useState } from 'react';
 import './header.css';
 
 
-const Header = () => {
+const Header = (props) => {
+  
+  
   const [posts, setPosts] = useState([]);
   useEffect(() => {
      const fetchData = async () => {
@@ -19,16 +21,41 @@ const Header = () => {
      fetchData();
   }, []);
 
+  // const deleteQuote = (id) => {
+  //   const url = `http://localhost:5000/quotes/${id}`;
+  //   fetch(url, {
+  //     method: 'DELETE',
+  //   })
+  //   .then(res => {
+  //     if (!res.ok) {
+  //       throw new Error('Failed to delete quote');
+  //     }
+  //     return res.json();
+  //   })
+  //   .then(data => {
+  //     console.log(data);
+  //     // update the state of your component to reflect the deleted quote
+  //   })
+  //   .catch(error => {
+  //     console.error(error);
+  //   });
+  // };
+
+
+
   
+
+
   return (
     <div>
-      
       {posts.map(item => (
      
   <div className='header-text' key={item.id}>
     <h1>{item.quote}</h1>
-    {/* <h1>“Helping your <span className='text-special'> products </span><br /> to see the light is my <br /> calling.”</h1> */}
-  </div>))}
+    
+  </div>
+  ))}
+
   </div>
   )
   

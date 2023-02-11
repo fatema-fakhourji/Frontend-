@@ -37,7 +37,21 @@
     font-size: 2rem;
     width: 30%;
 }
+.changes {
+    background-color: #10101a;
+    align-items: center;
+    width: 5vw;
+    color: white;
+    border-color: white;
+    border-radius: 22px;
+    height: 6vh;
+    font-size: 25px;
+  }
+  .buttons{
+    display: flex;
+    justify-content: flex-end ;
     
+  }
 @media (max-width: 1200px){
     .about-content{
         display: flex;

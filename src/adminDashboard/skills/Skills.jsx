@@ -7,6 +7,7 @@ import node from '../../assets/nodeJS.png'
 import reactpic from '../../assets/react.png'
 import python from '../../assets/python.png'
 import { useEffect, useState } from 'react';
+import DeleteSkill from './deleteSkill';
 
 const Skills = () => {
   const [posts, setPosts] = useState([]);
@@ -38,7 +39,7 @@ const Skills = () => {
     {posts.map(item => (
     <div className='skills-items'>
      <span className='skills-item-1'> 
-        <img src={`http://localhost:5000/${item.image}`}/>
+        <img src={`http://localhost:5000/${item.image1}`}/>
         <h3>  {item.description}</h3>
      </span>
      
@@ -50,7 +51,11 @@ const Skills = () => {
     <div className='skills-quote'>
     {posts.map(item => (
       <p>{item.quote}</p>
-    ))}
+
+    ))
+    }        < DeleteSkill />
+      
+
 
     </div>
     </div>
