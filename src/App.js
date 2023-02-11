@@ -11,9 +11,10 @@ export const App = () => {
       <About />
       <Skills />
       <Projects />
-      <Certificates />
+      {/* <Certificates /> */}
       <Contact />
       <Footer />
+
 
     </div>
   )

@@ -10,14 +10,14 @@ import python from '../../assets/python.png'
 const Skills = () => {
   return (
     <div className='skills-container' id='skills'>
-    <br />
-    <br />
-    <br />
-    <div className='skills-title'>
-      <img src={logo} />
-    <h1>Skills: </h1>
-    </div>
-    <div className='skills-items'>
+      <br />
+      <br />
+      <br />
+      <div className='skills-title'>
+        <img src={logo} />
+      <h1>Skills: </h1>
+      </div>
+      <div className='skills-items'>
      <span className='skills-item-1'> 
         <img src={sql}/>
         <h3> SQL</h3>

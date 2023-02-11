@@ -15,7 +15,7 @@ function Navbar() {
 
 	return (
 		<header>
-    <img src={logo} />
+    <img src={logo} alt=''/>
     		<nav ref={navRef}>
 			<p> Anass Haydar </p>
 				<a onClick={() => document.getElementById("about").scrollIntoView()}>About</a>
@@ -34,6 +34,7 @@ function Navbar() {
 			<button className="nav-btn" onClick={showNavbar}>
 				<FaBars />
 			</button>
+			{/* <button className='signIn-button'>Sign In</button> */}
 		</header>
 	);
 }
@@ -52,7 +53,7 @@ export default Navbar;
 //             <div className='navbar-links'>
 
 //           <div className='navbar-links_logo'> 
-//         <img src={logo} />
+//         <img src={logo} alt=''/>
 //            </div> 
 //            <div className='navbar-container-container'> </div>
 //           <div className='navbar-links_container'>
