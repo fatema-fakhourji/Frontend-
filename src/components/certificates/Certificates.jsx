@@ -5,13 +5,6 @@ import certificate2 from "../certificates/images/certificate2.jpg";
 import certificate3 from "../certificates/images/certificate3.jpg";
 import certificate4 from "../certificates/images/certificate4.jpg";
 import logo from "../certificates/images/logo.png"
-import Carousel from "react-elastic-carousel";
-
-const breakPoints = [
-  { width: 1, itemsToShow: 1 },
-  { width: 550, itemsToShow: 2 },
- 
-];
 
 const ProductCard = () => {
   return (
@@ -26,7 +19,7 @@ const ProductCard = () => {
         </h1>
         <section>
           <div className="row">
-            <Carousel breakPoints={breakPoints}>
+           
               {/*cer 1*/}
 
               <div className="product">
@@ -78,7 +71,7 @@ const ProductCard = () => {
                   </a>
                 </div>
               </div>
-            </Carousel>
+           
           </div>
         </section>
       </Fragment>

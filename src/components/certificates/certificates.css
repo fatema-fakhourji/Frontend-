@@ -1,144 +1,80 @@
-body{
+body {
   background-color: #10101a;
 }
 
-.row{
+.row {
+  display: flex;
+  justify-content: space-between;
   padding-top: 7rem;
   margin: 10px;
- 
 }
 
-h1{
+.product {
+  overflow: hidden;
+  width: 20vw;
+  height: 38vh;
+  border-radius: 80px;
+  background-color: #181924;
+  transition: 1s;
+}
+
+h1 {
   display: flex;
   color: white;
   margin-top: 150px;
   margin-bottom: -20px;
 }
 
-.logo{
+.logo {
   width: 150px;
   margin-top: -50px;
 }
 
-.product{
-  overflow: hidden;
-  width: 23vw;
-  height: 45vh;
-  border-radius: 80px;
-  background-color: #181924;
-  transition: 1s;
-  
-  
- 
-}
-
-.image{
-  height: 30vh;
+.image {
+  height: 25vh;
   border-radius: 10px;
-  margin: 10px;
+  margin: 1px;
   padding-top: 60px;
-  
 }
 
-
-.product:hover{
-  transform: scale(1.6);
+.product:hover {
+  transform: scale(1.4);
   z-index: 2;
-
 }
 
-.product-thumb{
+.product-thumb {
   display: flex;
   justify-content: center;
- 
 }
 
+@media screen and (max-width: 1200px) {
+  .image {
+    width: 290px;
+    height: 230px;
+  }
 
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
 
+  .product:hover {
+    transform: scale(1.2);
+    z-index: 2;
+    height: 350px;
+    width: 350px;
+  }
 
-
-
-@media screen and (max-width:955px) {
- 
-  .image{
-    width: 260px;
+  .image:hover {
+    width: 290px;
     height: 220px;
-    
   }
-  .btn-custom{
-    padding:10px 30px;
+
+  .product {
+    width: 350px;
+    height: 390px;
+    margin: 18px;
   }
-  
 }
-
-@media screen and (max-width:1225px) {
-  .product{
-   width: 425px;
-   height: 400px;
-   margin: 8px;
-  
-  }
-
-  .btn-custom{
-    padding:10px 30px;
-  }
-  
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
