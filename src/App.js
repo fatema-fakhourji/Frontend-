@@ -1,22 +1,74 @@
-import React from 'react'
+import {React, useState} from 'react'
 import { About, Certificates, Contact, Footer, Header, Navbar, Projects, Skills } from './components'
 import './App.css'
+import { Routes, Route, BrowserRouter, Link } from "react-router-dom"
+import Login from './components/login/login'
+import Dashboard from './components/adminDashboard/dashboard'
+import Signup from './components/Signup/Signup'
+
+
 
 
 export const App = () => {
+  const [showLogin, setShowLogin] = useState(false)
   return (
-    <div className='App'>
-      <Navbar />
-      <Header />
-      <About />
-      <Skills />
-      <Projects />
-      <Certificates />
-      <Contact />
-      <Footer />
 
+    
+    <BrowserRouter>
+    <div className='App'>
+   
+      <Routes>
+        <Route path="/" element={ <Navbar /> } />
+      </Routes>
+      
+
+      <Routes>
+        <Route path="/" element={ <Header /> } />
+      </Routes>
+
+      <Routes>
+        <Route path="/" element={ <About /> } />
+      </Routes>
+
+      <Routes>
+        <Route path="/" element={ <Skills /> } />
+      </Routes>
+
+      <Routes>
+        <Route path="/" element={ <Projects /> } />
+      </Routes>
+
+      <Routes>
+        <Route path="/" element={ <Certificates /> } />
+      </Routes>
+
+      <Routes>
+        <Route path="/" element={ <Contact /> } />
+      </Routes>
+
+      <Routes>
+        <Route path="/" element={ <Footer /> } />
+      </Routes>
+
+      <Routes>
+        <Route path="/login" element={ <Login /> } />
+      </Routes>
+
+      <Routes>
+        <Route path="/dashboard" element={ <Dashboard /> } />
+      </Routes>
+
+      <Routes>
+        <Route path="/signup" element={ <Signup /> } />
+      </Routes>
+
+      
     </div>
-  )
+  </BrowserRouter>
+)
 }
 
+
 export default App
+ 
+

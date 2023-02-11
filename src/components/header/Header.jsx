@@ -22,6 +22,7 @@ const Header = () => {
   
   return (
     <div>
+      
       {posts.map(item => (
      
   <div className='header-text' key={item.id}>

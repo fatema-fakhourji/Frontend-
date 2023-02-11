@@ -1,5 +1,6 @@
 import React from 'react';
 import './navbar.css';
+import { Link } from 'react-router-dom';
 
 import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -14,7 +15,13 @@ function Navbar() {
 	};
 
 	return (
+		<div>
+	      <Link to="/login">
+          <button>Login</button>
+        </Link>
+
 		<header>
+			
     <img src={logo} />
     		<nav ref={navRef}>
 			<p> Anass Haydar </p>
@@ -35,33 +42,9 @@ function Navbar() {
 				<FaBars />
 			</button>
 		</header>
+		</div>
 	);
 }
 
 export default Navbar;
 
-// import React from 'react';
-// import './navbar.css';
-
-
-// import logo from '../../assets/logo-1.png';
-
-// const Navbar = () => {
-//   return (
-//       <div className='navbar-section'> 
-//             <div className='navbar-links'>
-
-//           <div className='navbar-links_logo'> 
-//         <img src={logo} />
-//            </div> 
-//            <div className='navbar-container-container'> </div>
-//           <div className='navbar-links_container'>
-//             <ul> 
-//           <li> <p> Anass Haydar </p></li>
-//           </ul>
-//           </div>
-//           </div>
-//       </div>
-//     )
-//   }
-// export default Navbar
