@@ -1,11 +1,7 @@
 import React from 'react';
 import './skills.css'
 import logo from '../../assets/logo-1.png';
-import sql from '../../assets/SQL.png'
-import js from '../../assets/javascript.png'
-import node from '../../assets/nodeJS.png'
-import reactpic from '../../assets/react.png'
-import python from '../../assets/python.png'
+
 import { useEffect, useState } from 'react';
 
 const Skills = () => {
@@ -23,6 +19,22 @@ const Skills = () => {
 
      fetchData();
   }, []);
+
+  
+   const [info, setInfo] = useState([]);
+   useEffect(() => {
+      const fetchData = async () => {
+         try {
+            const response = await fetch('http://localhost:5000/quote');
+            const data = await response.json();
+            setInfo(data);
+         } catch (err) {
+            console.log(err.message);
+         }
+      };
+ 
+      fetchData();
+   }, []);
   return (
     <div>
       
@@ -48,7 +60,7 @@ const Skills = () => {
 
     </div>
     <div className='skills-quote'>
-    {posts.map(item => (
+    {info.map(item => (
       <p>{item.quote}</p>
     ))}
 
