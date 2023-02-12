@@ -10,13 +10,10 @@ const ProductCard = () => {
   return (
     <div id="certificates">
       <Fragment>
-        <h1>
-          {" "}
-          <a href="#">
-            <img className="logo" src={logo} alt="logo" />
-          </a>
-          Certificates:
-        </h1>
+      <div className='certificates-title'>
+      <img src={logo} />
+      <p>Certificates: </p>
+    </div>
         <section>
           <div className="row">
            

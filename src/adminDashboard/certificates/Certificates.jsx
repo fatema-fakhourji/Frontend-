@@ -5,8 +5,8 @@ import certificate2 from "../certificates/images/certificate2.jpg";
 import certificate3 from "../certificates/images/certificate3.jpg";
 import certificate4 from "../certificates/images/certificate4.jpg";
 import logo from "../certificates/images/logo.png";
-import "../certificates/authorize";
-import checkUser from "../certificates/authorize";
+import "../authorize";
+// import checkUser from "../certificates/authorize";
 
 
 const ProductCard = () => {
@@ -28,7 +28,7 @@ const ProductCard = () => {
   //     e.preventDefault();
 
   //     const response = await fetch(
-  //       `http://localhost:5000/certificates/${_id}`,
+  //       `https://anass-haidar-portfolio-stfk.onrender.com/certificates/${_id}`,
   //       {
   //         method: "PATCH",
   //         headers: {
@@ -60,7 +60,7 @@ const ProductCard = () => {
   //       image: image,
   //     };
   //     const response = await fetch(
-  //       `http://localhost:5000/certificates/${certificate?.id}`,
+  //       `https://anass-haidar-portfolio-stfk.onrender.com/certificates/${certificate?.id}`,
   //       {
   //         method: "PATCH",
   //         mode: "cors",
@@ -83,7 +83,7 @@ const ProductCard = () => {
   //     let body = {
   //       image: image,
   //     };
-  //     const response = await fetch(`http://localhost:5000/certificates/`, {
+  //     const response = await fetch(`https://anass-haidar-portfolio-stfk.onrender.com/certificates/`, {
   //       method: "POST",
   //       mode: "cors",
   //       body,
@@ -104,7 +104,7 @@ const ProductCard = () => {
       let body = {
         image: image,
       };
-      const response = await fetch(`http://localhost:5000/certificates/${id}`, {
+      const response = await fetch(`https://anass-haidar-portfolio-stfk.onrender.com/certificates/${id}`, {
         method: "POST",
         mode: "no-cors",
 
@@ -123,7 +123,7 @@ const ProductCard = () => {
 
   const deleteImage = async (id) => {
     try {
-      const response = await fetch(`http://localhost:5000/certificates/${id}`, {
+      const response = await fetch(`https://anass-haidar-portfolio-stfk.onrender.com/certificates/${id}`, {
         method: "DELETE",
         mode: "cors",
         headers: {
@@ -139,7 +139,7 @@ const ProductCard = () => {
 
   const fetchProjects = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/certificates/`, {
+      const response = await fetch(`https://anass-haidar-portfolio-stfk.onrender.com/certificates/`, {
         method: "GET",
         mode: "cors",
         headers: {
@@ -164,13 +164,10 @@ const ProductCard = () => {
   return (
     <div id="certificates">
       <div className="contact">
-        <h1>
-          {" "}
-          <a href="#">
-            <img className="logo" src={logo} alt="logo" />
-          </a>
-          Certificates:
-        </h1>
+        <div className="certificates-header">
+          <img className="logo" src={logo} alt="logo" />
+          <p>Certificates:</p>
+        </div>
         <form>
           <div className="new-cert">
             <label for="file">Upload File</label>
@@ -207,7 +204,7 @@ const ProductCard = () => {
                 <a href="#">
                   <img
                     className="image"
-                    src={`http://localhost:5000/${project.image}`}
+                    src={`https://anass-haidar-portfolio-stfk.onrender.com/${project.image}`}
                     alt="certificate"
                   />
                 </a>

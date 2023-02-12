@@ -1,11 +1,7 @@
 import React from 'react';
 import './skills.css'
 import logo from '../../assets/logo-1.png';
-import sql from '../../assets/SQL.png'
-import js from '../../assets/javascript.png'
-import node from '../../assets/nodeJS.png'
-import reactpic from '../../assets/react.png'
-import python from '../../assets/python.png'
+
 import { useEffect, useState } from 'react';
 
 const Skills = () => {
@@ -13,7 +9,7 @@ const Skills = () => {
   useEffect(() => {
      const fetchData = async () => {
         try {
-           const response = await fetch('http://localhost:5000/skills');
+           const response = await fetch('https://anass-haidar-portfolio-stfk.onrender.com/skills');
            const data = await response.json();
            setPosts(data);
         } catch (err) {
@@ -23,6 +19,23 @@ const Skills = () => {
 
      fetchData();
   }, []);
+
+  
+   const [info, setInfo] = useState([]);
+   useEffect(() => {
+      const fetchData = async () => {
+         try {
+            const response = await fetch('https://anass-haidar-portfolio-stfk.onrender.com/quote');
+            const data = await response.json();
+            setInfo(data);
+         } catch (err) {
+            console.log(err.message);
+         }
+      };
+ 
+      fetchData();
+   }, []);
+   
   return (
     <div>
       
@@ -32,13 +45,13 @@ const Skills = () => {
     <br />
     <div className='skills-title'>
       <img src={logo} />
-    <h1>Skills: </h1>
+    <p>Skills: </p>
     </div>
     <div className='skills-container' id='skills'>
     {posts.map(item => (
     <div className='skills-items'>
      <span className='skills-item-1'> 
-        <img src={`http://localhost:5000/${item.image}`}/>
+        <img src={`https://anass-haidar-portfolio-stfk.onrender.com/${item.image}`}/>
         <h3>  {item.description}</h3>
      </span>
      
@@ -48,7 +61,7 @@ const Skills = () => {
 
     </div>
     <div className='skills-quote'>
-    {posts.map(item => (
+    {info.map(item => (
       <p>{item.quote}</p>
     ))}
 

@@ -10,7 +10,7 @@ const Header = (props) => {
   useEffect(() => {
      const fetchData = async () => {
         try {
-           const response = await fetch('http://localhost:5000/about');
+           const response = await fetch('https://anass-haidar-portfolio-stfk.onrender.com/about');
            const data = await response.json();
            setPosts(data);
         } catch (err) {
@@ -22,7 +22,7 @@ const Header = (props) => {
   }, []);
 
   // const deleteQuote = (id) => {
-  //   const url = `http://localhost:5000/quotes/${id}`;
+  //   const url = `https://anass-haidar-portfolio-stfk.onrender.com/quotes/${id}`;
   //   fetch(url, {
   //     method: 'DELETE',
   //   })

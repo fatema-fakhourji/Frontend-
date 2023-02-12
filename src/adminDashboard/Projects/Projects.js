@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import EditProject from './EditProject';
 import Project from './Project'
-import checkUser from "../Authorize";
+import checkUser from "../authorize";
 import logo from '../../assets/logo.png';
 import'./projects.css';
 
@@ -64,7 +64,7 @@ function Projects({projects, onUpdateProject, setProjects}) {
       
       const HandleAddData = async () => {
         const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTM3ZmRlZDdiMTk3NTlhNjM5MzczNSIsImlhdCI6MTY3NjEyODk3NywiZXhwIjoxNjc4NzIwOTc3fQ.Uf9nb5MnyOpZSSwzV1zpIrU_9gbN-BbyDszOzNfpn2g'
-        const response = await fetch('http://localhost:5000/projects/', {
+        const response = await fetch('https://anass-haidar-portfolio-stfk.onrender.com/projects/', {
           method: 'POST',
           headers: {
             "Content-Type" : "application/json",
@@ -106,7 +106,7 @@ function Projects({projects, onUpdateProject, setProjects}) {
         Add new project
         </button>
         {showPopup && (
-        <div className="popup">
+        <div className='add-text'>
           <form>
           <label>
           Number:
@@ -115,6 +115,7 @@ function Projects({projects, onUpdateProject, setProjects}) {
             name="number"
             value={formData.number}
             onChange={handleInputChange}
+            className='add-input'
           />
         </label>
         <br />
@@ -125,6 +126,7 @@ function Projects({projects, onUpdateProject, setProjects}) {
             name="title"
             value={formData.title}
             onChange={handleInputChange}
+            className='add-input'
           />
         </label>
         <br />
@@ -135,6 +137,7 @@ function Projects({projects, onUpdateProject, setProjects}) {
             name="image1"
             value={formData.image1}
             onChange={handleInputChange}
+            className='add-input'
           />
         </label>
         <br />
@@ -145,6 +148,7 @@ function Projects({projects, onUpdateProject, setProjects}) {
             name="image2"
             value={formData.image2}
             onChange={handleInputChange}
+            className='add-input'
           />
         </label>
         <br />
@@ -155,6 +159,7 @@ function Projects({projects, onUpdateProject, setProjects}) {
             name="description"
             value={formData.description}
             onChange={handleInputChange}
+            className='add-input'
           />
         </label>
         <br />
@@ -164,14 +169,15 @@ function Projects({projects, onUpdateProject, setProjects}) {
             type="text"
             name="link"
             value={formData.link}
-            onChange={handleInputChange}          
+            onChange={handleInputChange}   
+            className='add-input'       
             />
         </label>
             <br />
-            <button type="button" onClick={HandleAddData}>
+            <button type="button" onClick={HandleAddData} className='add-input' >
               Submit
             </button>
-            <button type="button" onClick={() => setShowPopup(false)}>
+            <button type="button" onClick={() => setShowPopup(false)} className='add-input' >
               Cancel
             </button>
           </form>

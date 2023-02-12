@@ -15,7 +15,7 @@ function DeleteProject({}) {
       }
     }, []);
     async function deleteData(_id) {
-      const response = await fetch(`http://localhost:5000/projects/${_id}`, {
+      const response = await fetch(`https://anass-haidar-portfolio-stfk.onrender.com/projects/${_id}`, {
         method: 'DELETE'
       });
     

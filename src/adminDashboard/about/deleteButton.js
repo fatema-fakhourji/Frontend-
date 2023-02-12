@@ -5,7 +5,7 @@ function DeleteButton(props) {
 
   const handleDelete = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/about/${props.id}`, {
+      const response = await fetch(`https://anass-haidar-portfolio-stfk.onrender.com/about/${props.id}`, {
         method: "DELETE",
       });
 

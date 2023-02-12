@@ -8,7 +8,7 @@ const Header = () => {
   useEffect(() => {
      const fetchData = async () => {
         try {
-           const response = await fetch('http://localhost:5000/about');
+           const response = await fetch('https://anass-haidar-portfolio-stfk.onrender.com/about');
            const data = await response.json();
            setPosts(data);
         } catch (err) {

@@ -9,7 +9,7 @@ const About = () => {
   useEffect(() => {
      const fetchData = async () => {
         try {
-           const response = await fetch('http://localhost:5000/about');
+           const response = await fetch('https://anass-haidar-portfolio-stfk.onrender.com/about');
            const data = await response.json();
            setPosts(data);
         } catch (err) {
@@ -28,10 +28,10 @@ const About = () => {
      
       <div className='about-title' key={item.id}>
         <img src={logo} />
-      <h1>About: </h1>
+      <p>About: </p>
       </div>
       <div className='about-content'> 
-      <div className='profile-background'>  <img src={`http://localhost:5000/${item.image}`}/></div>
+      <div className='profile-background'>  <img src={`https://anass-haidar-portfolio-stfk.onrender.com/${item.image}`}/></div>
       <p> {item.description}</p>
      
       </div>

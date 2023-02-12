@@ -2,10 +2,39 @@
     color: white
 }
 .popup{
+    width: 250px;
+    height: 45px;
+    background-color: #181924;
+    border-radius: 10px;
     color: white;
+    border: solid 1px #6f6868;
+    font-size: 20px;
+}
+.add-text{
+    color: white;
+}
+.popup-submit{
+    width: 200px;
+    height: 45px;
+    background-color: #181924;
+    border-radius: 10px;
+    color: white;
+    border: solid 1px #6f6868;
+    font-size: 20px;
+    cursor: pointer;
 }
 .projects-section{
     margin-top: 150px;
+}
+.add-input{
+    width: 130px;
+    height: 35px;
+    background-color: #181924;
+    border-radius: 10px;
+    color: white;
+    border: solid 1px #6f6868;
+    font-size: 20px;
+
 }
 .projects-button {
     background-color: #181924;
@@ -13,7 +42,7 @@
     height: 57px;
     border-radius: 20px;
     color: white;
-    border: none;
+    border: solid 2px #6f6868;
     font-size: 20px;
     margin-right: 100px;
     cursor: pointer;
@@ -123,34 +152,16 @@
     position: relative;
 }
 .edit-button{
+    width: 200px;
+    height: 45px;
     background-color: #181924;
-    border-radius: 50px;
-    width: 10vw;
-    border: none;
+    border-radius: 10px;
     color: white;
-    font-size: 50px;
+    border: solid 1px #6f6868;
+    font-size: 20px;
     cursor: pointer;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
 }
-.project-holder:hover .edit-button {
-    display: block;
-}
-/* .project-border:hover{
-    opacity: 0.1;
-} */
-.project-content p{
-    background-color: #181924;
-}
-.project-content {
-    background-color: #181924;
-}
-.project-content a{
-    background-color: #181924;
-}
+
 
 @media only screen and (min-width: 300px) and (max-width: 800px) {
   

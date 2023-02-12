@@ -10,7 +10,7 @@ const Projects = () => {
   useEffect(() => {
      const fetchData = async () => {
         try {
-           const response = await fetch('http://localhost:5000/projects');
+           const response = await fetch('https://anass-haidar-portfolio-stfk.onrender.com/projects');
            const data = await response.json();
            setPosts(data);
         } catch (err) {
@@ -35,8 +35,8 @@ const Projects = () => {
         </div>
         <div className='project-border' >
           <div className='img-container'>
-            <img src={`http://localhost:5000/${item.image1}`} className='project-image1' alt='logo'/>
-            <img src={`http://localhost:5000/${item.image2}`}className='project-image2' alt='logo'/>
+            <img src={`https://anass-haidar-portfolio-stfk.onrender.com/${item.image1}`} className='project-image1' alt='logo'/>
+            <img src={`https://anass-haidar-portfolio-stfk.onrender.com/${item.image2}`}className='project-image2' alt='logo'/>
           </div>
             <div className='project-content'>
               <p className='title1'>{item.title}</p>

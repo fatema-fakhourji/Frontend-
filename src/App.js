@@ -2,9 +2,10 @@ import {React, useState} from 'react'
 import { About, Certificates, Contact, Footer, Header, Navbar, Projects, Skills } from './components'
 import './App.css'
 import { Routes, Route, BrowserRouter, Link } from "react-router-dom"
-import Login from './components/login/login'
+import Login from './adminDashboard/Login'
 import Dashboard from './adminDashboard/Dashboard'
-import Signup from './components/Signup/Signup'
+import Signup from './adminDashboard/register'
+
 
 
 

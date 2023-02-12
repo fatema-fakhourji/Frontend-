@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import'./projects.css';
 import { confirmAlert } from 'react-confirm-alert';
 import 'react-confirm-alert/src/react-confirm-alert.css'; 
-import checkUser from "../Authorize";
+import checkUser from "../authorize";
 
 function Project({project, project:{_id, number, title, image1, image2, description, link}, captureEdit, changeEditState, setProjects}) {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -40,7 +40,7 @@ function Project({project, project:{_id, number, title, image1, image2, descript
       const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTM3ZmRlZDdiMTk3NTlhNjM5MzczNSIsImlhdCI6MTY3NTg1Mzc5MCwiZXhwIjoxNjc4NDQ1NzkwfQ.t1DZ8C77pNE6wwwItcyI28as6rybO_3BdkIEDBL67zM'
         const response = await fetch({
             method: 'DELETE',
-            url: `http://localhost:5000/projects/${_id}`,
+            url: `https://anass-haidar-portfolio-stfk.onrender.com/projects/${_id}`,
             headers: {
                 "Content-Type" : "application/json",
                 'Authorization': 'Bearer ' + token,
@@ -76,8 +76,8 @@ function Project({project, project:{_id, number, title, image1, image2, descript
             <div className="project-holder">
               <div className='project-border' >
                 <div className='img-container'>
-                  <img src={image1} className='project-image1' alt='logo'/>
-                  <img src={image2} className='project-image2' alt='logo'/>
+                  <img src={`https://anass-haidar-portfolio-stfk.onrender.com/${image1}`} className='project-image1' alt='logo'/>
+                  <img src={`https://anass-haidar-portfolio-stfk.onrender.com/${image2}`} className='project-image2' alt='logo'/>
                 </div>
                 <div className='project-content'>
                   <p className='title1'>{title}</p>
@@ -90,9 +90,11 @@ function Project({project, project:{_id, number, title, image1, image2, descript
                     captureEdit(project);
                     changeEditState(project)
                   }}
+                  className='edit-button'
                 >Edit Project</button>
                 <button
                   onClick={()=> handleClickDelete(_id)}
+                  className='edit-button'
                 >Delete Project</button>
             </div>
           </div>

@@ -14,7 +14,7 @@ const Skills = () => {
   useEffect(() => {
      const fetchData = async () => {
         try {
-           const response = await fetch('http://localhost:5000/skills');
+           const response = await fetch('https://anass-haidar-portfolio-stfk.onrender.com/skills');
            const data = await response.json();
            setPosts(data);
         } catch (err) {
@@ -33,13 +33,13 @@ const Skills = () => {
     <br />
     <div className='skills-title'>
       <img src={logo} />
-    <h1>Skills: </h1>
+    <p>Skills: </p>
     </div>
     <div className='skills-container' id='skills'>
     {posts.map(item => (
     <div className='skills-items'>
      <span className='skills-item-1'> 
-        <img src={`http://localhost:5000/${item.image1}`}/>
+        <img src={`https://anass-haidar-portfolio-stfk.onrender.com/${item.image}`}/>
         <h3>  {item.description}</h3>
      </span>
      

@@ -6,22 +6,27 @@
     justify-content: center;
     position: relative;
     left: 8%;
+
 }   
 .skills-title{
     display: flex;
-    justify-content: flex-start;
+    align-items: center;
 }
-.skills-title h1{
+.skills-title p{
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
     position: relative;
     left: 7%;
     display: flex;
     align-items: center;
     color: white;
+    font-size: 32px;
+
 }
 .skills-container{
     display: flex;
-
- justify-content: space-around;
+    justify-content: space-between;
 }
 
 

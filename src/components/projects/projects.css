@@ -1,3 +1,12 @@
+.loading {
+    color: white
+}
+.popup{
+    color: white;
+}
+.projects-section{
+    margin-top: 150px;
+}
 .projects-header{
     display: flex;
     align-items: center;
@@ -7,7 +16,6 @@
     color: white;
     font-weight: bold;
     font-size: 40px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     position: relative;
     left: 7%;
     display: flex;
@@ -33,7 +41,6 @@
 }
 .number {
     font-size: 100px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
     color: white;
     -webkit-text-stroke: 1px white;
@@ -50,7 +57,6 @@
 }
 .project-content {
     color: white;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     width: 40vw;
 }
 .title1 {

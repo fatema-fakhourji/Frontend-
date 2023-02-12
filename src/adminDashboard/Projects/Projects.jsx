@@ -18,7 +18,7 @@ const AllProjects= () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('http://localhost:5000/projects/')
+                const response = await fetch('https://anass-haidar-portfolio-stfk.onrender.com/projects/')
                 const projects = await response.json();
                 setProjects(projects);
                 setLoading(false);

@@ -1,4 +1,14 @@
-
+.changes-skills{
+    background-color: #181924;
+    width: 219px;
+    height: 57px;
+    border-radius: 20px;
+    color: white;
+    border: solid 2px #6f6868;
+    font-size: 20px;
+    margin-right: 100px;
+    cursor: pointer;
+}
 
 .skills-title img{
     width: 8vw;
@@ -20,7 +30,7 @@
 }
 .skills-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 .skills-items{
     display: flex;

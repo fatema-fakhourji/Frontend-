@@ -17,14 +17,32 @@ body {
   background-color: #181924;
   transition: 1s;
 }
-
-h1 {
+.certificates-title img{
+  width: 8vw;
   display: flex;
-  color: white;
-  margin-top: 150px;
-  margin-bottom: -20px;
+  justify-content: center;
+  position: relative;
+  left: 8%;
+
 }
 
+.certificates-title{
+  display: flex;
+  align-items: center;
+
+}
+.certificates-title p{
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  position: relative;
+  left: 7%;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 32px;
+
+}
 .logo {
   width: 150px;
   margin-top: -50px;

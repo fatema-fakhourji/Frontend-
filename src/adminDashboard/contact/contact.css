@@ -17,6 +17,29 @@
     color: white;
     width: 6rem;
 }
+.certificates-header{
+    display: flex;
+    align-items: center;
+
+}
+.certificates-header p{
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    position: relative;
+    left: 7%;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 32px;
+}
+.certificates-header img{
+    width: 8vw;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 8%;
+}
 .button {
     margin: 0 auto;
     width: 10rem;

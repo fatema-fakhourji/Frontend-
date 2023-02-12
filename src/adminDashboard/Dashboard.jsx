@@ -7,7 +7,7 @@ import Skills from './skills/Skills.jsx';
 import Certificates from './certificates/Certificates.jsx';
 import Contact from './contact/Contact.jsx';
 import Footer from './footer/Footer.jsx';
-
+import './dashboard.css'
 function Dashboard() {
     return (
         <div>

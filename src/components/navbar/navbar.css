@@ -1,3 +1,14 @@
+.login-button{
+  background-color: #181924;
+  width: 150px;
+  height: 57px;
+  border-radius: 20px;
+  color: white;
+  border: solid 2px #6f6868;
+  font-size: 20px;
+  margin-right: 100px;
+  cursor: pointer;
+}
 header{
   padding: 0.8rem 15%;
 }

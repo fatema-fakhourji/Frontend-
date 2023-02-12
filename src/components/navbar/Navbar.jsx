@@ -17,7 +17,7 @@ function Navbar() {
 	return (
 		<div>
 	      <Link to="/login">
-          <button>Login</button>
+          <button className='login-button'>Login</button>
         </Link>
 
 		<header>

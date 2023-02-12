@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import checkUser from "../Authorize";
+import checkUser from "../authorize";
 import'./projects.css';
 
 function EditProject({ editForm, handleProjectUpdate, handleChange }) {
@@ -11,7 +11,7 @@ function EditProject({ editForm, handleProjectUpdate, handleChange }) {
         
         e.preventDefault();
 
-        const response = await fetch(`http://localhost:5000/projects/${_id}`, {
+        const response = await fetch(`https://anass-haidar-portfolio-stfk.onrender.com/projects/${_id}`, {
             method: "PATCH",
             headers: {
                 "Content-Type" : "application/json",
@@ -36,13 +36,13 @@ function EditProject({ editForm, handleProjectUpdate, handleChange }) {
     return (
         <div>
             <form onSubmit={handleEditForm}>
-                <input type="number" name="number" value={number} onChange={handleChange}/>
-                <input type="sting" name="title" value={title} onChange={handleChange}/>
-                <input type="string" name="image1" value={image1} onChange={handleChange}/>
-                <input type="string" name="image2" value={image2} onChange={handleChange}/>
-                <input type="sting" name="description" value={description} onChange={handleChange}/>
-                <input type="string" name="link" value={link} onChange={handleChange}/>
-                <button type="submit">Submit Changes</button>
+                <input type="number" name="number" value={number} onChange={handleChange} className="popup"/>
+                <input type="sting" name="title" value={title} onChange={handleChange} className="popup"/>
+                <input type="string" name="image1" value={image1} onChange={handleChange} className="popup"/>
+                <input type="string" name="image2" value={image2} onChange={handleChange} className="popup"/>
+                <input type="sting" name="description" value={description} onChange={handleChange} className="popup"/>
+                <input type="string" name="link" value={link} onChange={handleChange} className="popup"/>
+                <button type="submit" className='popup-submit'>Submit Changes</button>
             </form>
 
         </div>
