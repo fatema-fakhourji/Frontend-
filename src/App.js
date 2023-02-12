@@ -7,15 +7,15 @@ import Register from "./components/adminDashboard/register"
 export const App = () => {
   return (
     <div className='App'>
-      <Navbar />
+      {/* <Navbar />
       <Header />
       <About />
       <Skills />
       <Projects />
       <Certificates />
       <Contact />
-      <Footer />
-
+      <Footer /> */}
+      <Register />
     </div>
   )
 }
