@@ -3,7 +3,7 @@ import { About, Certificates, Contact, Footer, Header, Navbar, Projects, Skills 
 import './App.css'
 import { Routes, Route, BrowserRouter, Link } from "react-router-dom"
 import Login from './components/login/login'
-import Dashboard from './components/adminDashboard/dashboard'
+import Dashboard from './adminDashboard/Dashboard'
 import Signup from './components/Signup/Signup'
 
 
